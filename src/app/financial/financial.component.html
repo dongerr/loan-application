@@ -1,0 +1,131 @@
+<h2>{{ title }}</h2>
+<form>
+  <div>
+    <h3>Income</h3>
+    <label for="salary">Annual Salary</label>
+    <input type="number" name="salary">
+    <label for="other-income">Other Income</label>
+    <input type="number" name="other-income"><br><br>
+    <label for="monthly-income">Total Monthly Income</label>
+    <input type="number" name="monthly-income" disabled> <!--calc total-->
+  </div>
+  <div>
+    <h3>Monthly Living Expenses</h3>
+    <label for="rent">Rent</label>
+    <input type="number" name="rent">
+    <label for="electricity">Electricity</label>
+    <input type="number" name="electricity"><br><br>
+    <label for="phone-bill">Telephone</label>
+    <input type="number" name="phone-bill">
+    <label for="water">Water</label>
+    <input type="number" name="water"><br><br>
+    <label for="housekeeping">House Keeping</label>
+    <input type="number" name="housekeeping">
+    <label for="school-fees">School Fees</label>
+    <input type="number" name="school-fees"><br><br>
+    <label for="transportation">Travelling/Petrol/Bus</label>
+    <input type="number" name="transportation">
+    <label for="entertainment">Entertainment/Video</label>
+    <input type="number" name="entertainment"><br><br>
+    <label for="hire">Total Hire Purchase Payments</label>
+    <input type="number" name="hire">
+    <label for="insurance">Life Insurance</label>
+    <input type="number" name="insurance"><br><br>
+    <label for="home-loan">Home Loan</label>
+    <input type="number" name="homeloan">
+    <label for="other-loan">Other Loan Payments</label>
+    <input type="number" name="other-loan"><br><br>
+    <label for="total-expenses">Total Outgoings</label>
+    <input type="number" name="total-expenses" disabled> <!--calc total-->
+  </div>
+  <div>
+    <h3>Asset Position</h3>
+    <label for="house-value">House Value</label>
+    <input type="number" name="house-value">
+    <label for="car-value">Car Value</label>
+    <input type="number" name="car-value"><br><br>
+    <label for="land-value">Land Value</label>
+    <input type="number" name="land-value">
+    <label for="life-policies">Life Policies</label>
+    <input type="number" name="life-policies"><br><br>
+    <label for="debtors">Debtors</label>
+    <input type="number" name="debtors">
+    <label for="personal-effects">Personal Effects</label>
+    <input type="number" name="personal-effects"><br><br>
+    <label for="cash-bank">Cash At Bank</label>
+    <input type="number" name="cash-bank">
+    <label for="cash-hand">Cash On Hand</label>
+    <input type="number" name="cash-hand"><br><br>
+    <label for="total-assets">Total Assets</label>
+    <input type="number" name="total-assets" disabled> <!--calc total-->
+  </div>
+  <div>
+    <h3>Liabilities</h3>
+    <label for="mortgage-balance">Mortgage Loan Balance</label>
+    <input type="number" name="mortgage-balance">
+    <label for="other-loans-balance">Total Other Loans Balance</label>
+    <input type="number" name="other-loans-balance"><br><br>
+    <label for="credit-cards">Credit Cards</label>
+    <input type="number" name="credit-cards">
+    <label for="liabilities">Liabilities</label>
+    <input type="number" name="liabilities"><br><br>
+    <label for="hire-balance">Hire Purchase Balance</label>
+    <input type="number" name="hire-balance"><br><br>
+    <label for="total-liabilities">Total Liabilities</label>
+    <input type="number" name="total-assets" disabled><br><br> <!--calc total-->
+  </div>
+  <div>
+    <label for="debt-recovery">Have you ever had legal proceedings against you for the recovery of a debt?</label>
+    <select name="debt-recovery">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select><br><br>
+    <label for="bankruptcy">Have you ever been declared bankruptcy or had bankruptcy proceedings against you?</label>
+    <select name="bankruptcy">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select><br><br>
+    <p>Consent</p>
+    <textarea rows="8" cols="100">1. I/We hereby consent to the release of credit information held by Merchant Finance Pte Limited to any Credit Reporting Agency and also authorize Merchant Finance Pte Limited to enquire with and to obtain credit information relating to me/us from any Credit Reporting Agency in relation to my credit facility. This authority is given by me/us and obtained by Merchant Finance Pte Limited pursuant to Regulation 9(6) of the Fair Reporting Regulation 2016.
+
+2. I/We hereby declare that the information in this application for finance is true and accurate and Merchant Finance Pte Limited is authorized to carry out any further checks.</textarea><br>
+    <input type="checkbox" name="consent">
+    <label for="consent">I agree.</label><br><br>
+    <label for="signature">Signature</label>
+    <input type="file" name="signature" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: jpg, jpeg, png, gif.</p><br><br>
+    <label for="payslips">Payslips</label>
+    <input type="file" name="payslips" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="ID">Two valid ID's'</label>
+    <input type="file" name="ID" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="employment-letter">Letter of employment confirmation</label>
+    <input type="file" name="letter-employment" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="tin-letter">TIN letter/TIN</label>
+    <input type="file" name="tin-letter" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="utility-bill">Utility bill (FEA/Water etc)</label>
+    <input type="file" name="utility-bill" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="other-loans">Other loan commitment statements (if any)</label>
+    <input type="file" name="other-loans" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="bank-statements">Bank statements (latest 3 months)</label>
+    <input type="file" name="bank-statements" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+    <label for="other-income">Proof of other income (if any)</label>
+    <input type="file" name="other-income" onchange="console.log(event.target.files)">
+    <!--implement-->
+    <p>Accepted file types: pdf, jpg, jpeg, png. Max: 8MB</p><br><br>
+  </div>
+</form>
